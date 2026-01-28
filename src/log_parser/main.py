@@ -3,16 +3,22 @@ import re
 
 
 def main():
-    output_file = "sessions.txt"
+    output_file_23 = "sessions_23.txt"
+    output_file_24 = "sessions_24.txt"
 
-    folder_path = "/home/dhruv/code/log_parser/2601/App/2026-01-24/"
+    folder_24 = "/home/dhruvkumarjiguda/code/log_parser/2601/App/2026-01-24/"
+    folder_23 = "/home/dhruvkumarjiguda/code/log_parser/2601/App/2026-01-23/"
 
-    log_file = folder_path + "App.log"
+    log_file_24 = folder_24 + "App.log"
+    log_file_23 = folder_23 + "App.log"
 
-    sessions = read_log(log_file)
-    write_sessions_to_file(sessions, output_file)
+    session_23 = read_log(log_file_23)
+    session_24 = read_log(log_file_24)
+    write_sessions_to_file(session_23, output_file_23)
+    write_sessions_to_file(session_24, output_file_24)
 
-    print(f"{len(sessions)} sessions written to {output_file}")
+    print(f"{len(session_23)} sessions written to {output_file_23}")
+    print(f"{len(session_24)} sessions written to {output_file_24}")
 
 
 if __name__ == "__main__":
