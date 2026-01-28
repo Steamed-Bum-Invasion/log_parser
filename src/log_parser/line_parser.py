@@ -12,6 +12,7 @@ class session:
     pallets_produced: int = 0
     init_total_time: Optional[float] = None
     final_total_time: Optional[float] = None
+    uph: Optional[float] = None  # Units per hour
 
 
 TIMESTAMP_RE = re.compile(
@@ -61,20 +62,36 @@ def read_log(file_path: str) -> List[session]:
                         current_session.pallets_produced = 0
                         current_session.init_total_time = None
                         current_session.final_total_time = None
+                        current_session.uph = None
                     elif metrics_count == 1:
                         # Only one metrics line - pallets = 1, time delta = None
                         current_session.pallets_produced = 1
                         current_session.init_total_time = init_time
                         current_session.final_total_time = last_time
+                        current_session.uph = None
                     else:
                         # Multiple metrics lines - calculate delta
-                        current_session.pallets_produced = (
+                        pallets_delta = (
                             last_units - init_units
                             if init_units is not None and last_units is not None
                             else 0
                         )
+                        current_session.pallets_produced = pallets_delta
                         current_session.init_total_time = init_time
                         current_session.final_total_time = last_time
+
+                        # Calculate UPH: (pallets / time_ms) * (1000 ms/s) * (3600 s/hr)
+                        time_delta_ms = (
+                            last_time - init_time
+                            if init_time is not None and last_time is not None
+                            else 0
+                        )
+                        if time_delta_ms > 0 and pallets_delta > 0:
+                            current_session.uph = (
+                                (pallets_delta / time_delta_ms) * 1000 * 3600
+                            )
+                        else:
+                            current_session.uph = None
 
                     sessions.append(current_session)
 
@@ -119,20 +136,34 @@ def read_log(file_path: str) -> List[session]:
             current_session.pallets_produced = 0
             current_session.init_total_time = None
             current_session.final_total_time = None
+            current_session.uph = None
         elif metrics_count == 1:
             # Only one metrics line - pallets = 1, time delta = None
             current_session.pallets_produced = 1
             current_session.init_total_time = init_time
             current_session.final_total_time = last_time
+            current_session.uph = None
         else:
             # Multiple metrics lines - calculate delta
-            current_session.pallets_produced = (
+            pallets_delta = (
                 last_units - init_units
                 if init_units is not None and last_units is not None
                 else 0
             )
+            current_session.pallets_produced = pallets_delta
             current_session.init_total_time = init_time
             current_session.final_total_time = last_time
+
+            # Calculate UPH: (pallets / time_ms) * (1000 ms/s) * (3600 s/hr)
+            time_delta_ms = (
+                last_time - init_time
+                if init_time is not None and last_time is not None
+                else 0
+            )
+            if time_delta_ms > 0 and pallets_delta > 0:
+                current_session.uph = (pallets_delta / time_delta_ms) * 1000 * 3600
+            else:
+                current_session.uph = None
 
         sessions.append(current_session)
 
@@ -150,5 +181,6 @@ def write_sessions_to_file(sessions: List[session], output_file: str):
                 f"Pallets Produced: {s.pallets_produced}\n"
                 f"Init Total Time: {s.init_total_time}\n"
                 f"Final Total Time: {s.final_total_time}\n"
+                f"UPH: {s.uph}\n"
                 f"{'-' * 40}\n"
             )
