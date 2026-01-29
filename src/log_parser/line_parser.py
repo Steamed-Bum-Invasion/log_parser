@@ -61,8 +61,6 @@ def read_log(file_path: str) -> List[session]:
                 # close previous session
                 if current_session:
                     current_session.end_time = last_timestamp["time"]
-                    current_session.init_rolling_uph = init_rolling_uph
-                    current_session.final_rolling_uph = last_rolling_uph
 
                     # Calculate based on number of metrics lines
                     if metrics_count == 0:
@@ -76,7 +74,10 @@ def read_log(file_path: str) -> List[session]:
                         current_session.pallets_produced = 1
                         current_session.init_total_time = init_time
                         current_session.final_total_time = last_time
+                        current_session.init_rolling_uph = init_rolling_uph
+                        current_session.final_rolling_uph = last_rolling_uph
                         current_session.uph = None
+                        current_session.seconds_per_pallet = None
                     else:
                         # Multiple metrics lines - calculate delta
                         pallets_delta = (
@@ -87,6 +88,8 @@ def read_log(file_path: str) -> List[session]:
                         current_session.pallets_produced = pallets_delta
                         current_session.init_total_time = init_time
                         current_session.final_total_time = last_time
+                        current_session.init_rolling_uph = init_rolling_uph
+                        current_session.final_rolling_uph = last_rolling_uph
 
                         # Calculate UPH: (pallets / time_seconds) * (3600 s/hr)
                         time_delta_seconds = (
@@ -146,8 +149,6 @@ def read_log(file_path: str) -> List[session]:
     # close final session
     if current_session and last_timestamp:
         current_session.end_time = last_timestamp["time"]
-        current_session.init_rolling_uph = init_rolling_uph
-        current_session.final_rolling_uph = last_rolling_uph
 
         # Calculate based on number of metrics lines
         if metrics_count == 0:
@@ -161,7 +162,10 @@ def read_log(file_path: str) -> List[session]:
             current_session.pallets_produced = 1
             current_session.init_total_time = init_time
             current_session.final_total_time = last_time
+            current_session.init_rolling_uph = init_rolling_uph
+            current_session.final_rolling_uph = last_rolling_uph
             current_session.uph = None
+            current_session.seconds_per_pallet = None
         else:
             # Multiple metrics lines - calculate delta
             pallets_delta = (
@@ -172,6 +176,8 @@ def read_log(file_path: str) -> List[session]:
             current_session.pallets_produced = pallets_delta
             current_session.init_total_time = init_time
             current_session.final_total_time = last_time
+            current_session.init_rolling_uph = init_rolling_uph
+            current_session.final_rolling_uph = last_rolling_uph
 
             # Calculate UPH: (pallets / time_seconds) * (3600 s/hr)
             time_delta_seconds = (
@@ -194,11 +200,19 @@ def read_log(file_path: str) -> List[session]:
 def write_sessions_to_file(sessions: List[session], output_file: str):
     with open(output_file, "w") as f:
         for s in sessions:
-            # Format UPH and seconds_per_pallet to 2 decimal places
+            # Format all decimal values to 2 decimal places
             uph_str = f"{s.uph:.2f}" if s.uph is not None else "None"
             spp_str = (
                 f"{s.seconds_per_pallet:.2f}"
                 if s.seconds_per_pallet is not None
+                else "None"
+            )
+            init_time_str = (
+                f"{s.init_total_time:.2f}" if s.init_total_time is not None else "None"
+            )
+            final_time_str = (
+                f"{s.final_total_time:.2f}"
+                if s.final_total_time is not None
                 else "None"
             )
 
@@ -208,8 +222,8 @@ def write_sessions_to_file(sessions: List[session], output_file: str):
                 f"Start Time: {s.start_time}\n"
                 f"End Time: {s.end_time}\n"
                 f"Pallets Produced: {s.pallets_produced}\n"
-                f"Init Total Time: {s.init_total_time}\n"
-                f"Final Total Time: {s.final_total_time}\n"
+                f"Init Total Time: {init_time_str}\n"
+                f"Final Total Time: {final_time_str}\n"
                 f"UPH: {uph_str}\n"
                 f"Seconds per Pallet: {spp_str}\n"
                 f"Init Rolling UPH: {s.init_rolling_uph}\n"
