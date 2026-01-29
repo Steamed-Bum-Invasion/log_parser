@@ -1,0 +1,70 @@
+====================================================================================================
+ERROR LOGS FOR: Services.Services.IOServices.IOController
+====================================================================================================
+Total errors: 60
+====================================================================================================
+
+2026-01-24 00:26:42,733 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 00:26:42,734 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 00:29:42,608 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 00:29:42,609 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 00:40:01,373 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 00:40:01,374 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 00:43:46,063 [21] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 00:43:46,064 [21] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 00:52:36,179 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 00:52:36,180 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 01:12:25,051 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 01:12:25,052 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 01:14:40,788 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 01:14:40,789 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 01:20:31,209 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 01:20:31,210 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 01:43:29,077 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 01:43:29,078 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 02:01:23,440 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 02:01:23,441 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 02:08:06,068 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 02:08:06,069 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 02:13:24,264 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 02:13:24,265 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 03:35:01,172 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 03:35:01,173 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 04:44:58,394 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 04:44:58,395 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 04:53:45,392 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 04:53:45,393 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 04:54:55,446 [9] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 04:54:55,447 [9] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 08:25:04,444 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 08:25:04,446 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 08:31:31,975 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 08:31:31,980 [12] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 08:35:04,414 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 08:35:04,415 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 09:02:38,525 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 09:02:38,526 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 11:18:25,241 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 11:18:25,241 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 11:39:58,733 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 11:39:58,733 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 13:09:55,122 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 13:09:55,123 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 13:12:29,729 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 13:12:29,730 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 13:15:56,791 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 13:15:56,792 [14] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 14:44:12,453 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 14:44:12,454 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 15:44:33,862 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 15:44:33,863 [13] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 16:29:19,091 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 16:29:19,092 [10] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 16:59:55,483 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 16:59:55,485 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+2026-01-24 17:38:01,473 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3)
+2026-01-24 17:38:01,474 [11] ERROR Services.Services.IOServices.IOController - Open device 0 (DevNum=1660944384) failed (attempt 1/3) - Error 0x8300002B: The subordinate device ID is conflicted.
+
+====================================================================================================
+END OF LOG - Total: 60 error(s)
+====================================================================================================

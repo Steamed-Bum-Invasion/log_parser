@@ -1,0 +1,26 @@
+====================================================================================================
+ERROR LOGS FOR: Services.Services.Pipelines.XHDP
+====================================================================================================
+Total errors: 16
+====================================================================================================
+
+2026-01-24 00:26:51,466 [12] ERROR Services.Services.Pipelines.XHDP - XHDP initialization failed due to IO error: No IO device found at index 1.
+2026-01-24 00:29:52,320 [19] ERROR Services.Services.Pipelines.XHDP - XHDP initialization failed due to IO error: No IO device found at index 1.
+2026-01-24 00:41:00,605 [23] ERROR Services.Services.Pipelines.XHDP - L2 Dispensing clamp: UP timeout
+2026-01-24 00:41:00,605 [23] ERROR Services.Services.Pipelines.XHDP - L2 Dispensing clamp UP position not reached
+2026-01-24 00:41:00,605 [23] ERROR Services.Services.Pipelines.XHDP - FAIL: L2 Dispensing CLAMP 1
+2026-01-24 01:12:59,891 [14] ERROR Services.Services.Pipelines.XHDP - L2 Dispensing stopper failed to go back. Triggering alarm
+2026-01-24 01:12:59,968 [14] ERROR Services.Services.Pipelines.XHDP - XHDP initialization failed due to invalid operation: Alarm with code AL00155 not found.
+2026-01-24 01:40:40,071 [14] ERROR Services.Services.Pipelines.XHDP - L2 Dispensing clamp: UP timeout
+2026-01-24 01:40:40,071 [14] ERROR Services.Services.Pipelines.XHDP - L2 Dispensing clamp UP position not reached
+2026-01-24 01:40:40,071 [14] ERROR Services.Services.Pipelines.XHDP - FAIL: L2 Dispensing CLAMP 1
+2026-01-24 03:34:26,254 [30] ERROR Services.Services.Pipelines.XHDP - Shuttle Stopper Down: DOWN timeout
+2026-01-24 03:34:26,254 [30] ERROR Services.Services.Pipelines.XHDP - Shuttle Stopper Down DOWN position not reached
+2026-01-24 03:34:31,271 [30] ERROR Services.Services.Pipelines.XHDP - L1 Buffer A stopper Down: DOWN timeout
+2026-01-24 03:34:31,271 [30] ERROR Services.Services.Pipelines.XHDP - L1 Buffer A stopper Down DOWN position not reached
+2026-01-24 03:34:36,285 [30] ERROR Services.Services.Pipelines.XHDP - L1 Dispensing stopper Down: DOWN timeout
+2026-01-24 03:34:36,285 [30] ERROR Services.Services.Pipelines.XHDP - L1 Dispensing stopper Down DOWN position not reached
+
+====================================================================================================
+END OF LOG - Total: 16 error(s)
+====================================================================================================

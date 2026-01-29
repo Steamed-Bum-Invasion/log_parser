@@ -1,0 +1,13 @@
+====================================================================================================
+ERROR LOGS FOR: Services.Services.MachineBackgroundService
+====================================================================================================
+Total errors: 3
+====================================================================================================
+
+2026-01-24 00:26:51,508 [12] ERROR Services.Services.MachineBackgroundService - Pipeline initialization failed.
+2026-01-24 00:29:52,341 [19] ERROR Services.Services.MachineBackgroundService - Pipeline initialization failed.
+2026-01-24 01:12:59,996 [14] ERROR Services.Services.MachineBackgroundService - Pipeline initialization failed.
+
+====================================================================================================
+END OF LOG - Total: 3 error(s)
+====================================================================================================

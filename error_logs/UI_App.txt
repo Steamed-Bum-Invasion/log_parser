@@ -1,0 +1,28 @@
+====================================================================================================
+ERROR LOGS FOR: UI.App
+====================================================================================================
+Total errors: 18
+====================================================================================================
+
+2026-01-24 08:26:32,356 [1] ERROR UI.App - Unhandled exception
+2026-01-24 08:32:11,682 [1] ERROR UI.App - Unhandled exception
+2026-01-24 08:35:49,252 [1] ERROR UI.App - Unhandled exception
+2026-01-24 09:03:23,706 [1] ERROR UI.App - Unhandled exception
+2026-01-24 09:35:37,347 [1] ERROR UI.App - Unhandled exception
+2026-01-24 10:28:26,929 [1] ERROR UI.App - Unhandled exception
+2026-01-24 10:28:31,995 [1] ERROR UI.App - Unhandled exception
+2026-01-24 11:19:34,478 [1] ERROR UI.App - Unhandled exception
+2026-01-24 11:40:29,643 [1] ERROR UI.App - Unhandled exception
+2026-01-24 13:10:37,176 [1] ERROR UI.App - Unhandled exception
+2026-01-24 13:13:01,023 [1] ERROR UI.App - Unhandled exception
+2026-01-24 13:16:28,487 [1] ERROR UI.App - Unhandled exception
+2026-01-24 14:44:30,414 [1] ERROR UI.App - Unhandled exception
+2026-01-24 15:45:59,980 [1] ERROR UI.App - Unhandled exception
+2026-01-24 16:29:42,273 [1] ERROR UI.App - Unhandled exception
+2026-01-24 17:00:26,363 [1] ERROR UI.App - Unhandled exception
+2026-01-24 17:38:47,738 [1] ERROR UI.App - Unhandled exception
+2026-01-24 17:56:55,995 [1] ERROR UI.App - Unhandled exception
+
+====================================================================================================
+END OF LOG - Total: 18 error(s)
+====================================================================================================

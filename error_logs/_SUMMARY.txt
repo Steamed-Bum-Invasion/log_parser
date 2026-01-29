@@ -1,0 +1,113 @@
+====================================================================================================
+ERROR LOG SUMMARY
+====================================================================================================
+
+NAMESPACES WITH ERRORS:
+----------------------------------------------------------------------------------------------------
+Common.Helpers.GlobalErrorHandler
+  Count: 115 error(s)
+
+Services.Services.IOServices.IOController
+  Count: 60 error(s)
+
+Services.Services.MachineBackgroundService
+  Count: 3 error(s)
+
+Services.Services.MotionServices.Advantech.MotionController
+  Count: 1041 error(s)
+
+Services.Services.Pipelines.XHDP
+  Count: 16 error(s)
+
+UI.App
+  Count: 18 error(s)
+
+
+====================================================================================================
+
+NAMESPACES WITHOUT ERRORS:
+----------------------------------------------------------------------------------------------------
+Common.Helpers.CsvFileHelper
+  Count: 0 error(s)
+
+Common.Helpers.JsonConfigurationLoader
+  Count: 0 error(s)
+
+Common.Helpers.JsonFileHelper
+  Count: 0 error(s)
+
+Common.Services.CommonControlSettingsService
+  Count: 0 error(s)
+
+Services.DependencyInjectionSetup
+  Count: 0 error(s)
+
+Services.Services.AccessControlSyncService
+  Count: 0 error(s)
+
+Services.Services.BarcodeScanner.BarcodeScannerService
+  Count: 0 error(s)
+
+Services.Services.DataService
+  Count: 0 error(s)
+
+Services.Services.IOCardWatcherService
+  Count: 0 error(s)
+
+Services.Services.PLC.PLCSerialService
+  Count: 0 error(s)
+
+Services.Services.TcpIpService
+  Count: 0 error(s)
+
+UI.Helpers.HardwareParser
+  Count: 0 error(s)
+
+UI.Helpers.UIJsonConfigurationLoader
+  Count: 0 error(s)
+
+UI.Models.Hardware
+  Count: 0 error(s)
+
+UI.ViewModels.AlarmViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.ControlBtnViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.DashboardCommonViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.DashboardViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.HardwareIntegrationViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.LoginViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.MainViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.MotionViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.PLCdialogViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.SettingConfigurationViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.SettingViewModel
+  Count: 0 error(s)
+
+UI.ViewModels.SplashScreenViewModel
+  Count: 0 error(s)
+
+====================================================================================================
+Total unique namespaces: 32
+Namespaces with errors: 6
+Namespaces without errors: 26
+Total error logs: 1253
+====================================================================================================
